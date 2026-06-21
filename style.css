@@ -1,0 +1,734 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dynalight&display=swap');
+/* Fontes:
+    - Lexend Giga: https://fonts.google.com/specimen/Lexend+Giga?preview.layout=grid&categoryFilters=Feeling:%2FExpressive%2FCute&preview.script=Latn
+    - Sour Gummy: https://fonts.google.com/specimen/Sour+Gummy?preview.layout=grid&categoryFilters=Feeling:%2FExpressive%2FCute&preview.script=Latn
+    - Dyna Light: https://fonts.google.com/specimen/Dynalight?preview.layout=grid&icon.size=24&icon.color=%23000000&categoryFilters=Feeling:%2FExpressive%2FFancy&preview.script=Latn
+*/ 
+
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+/* Cabeçalho */
+    header{
+        position: sticky;
+        background-color: #E38820;
+        box-shadow: 2px 10px 20px 0px #0000005d;
+        
+        justify-content: space-between;    
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        display: flex;
+
+        font-family: "Lexend Giga", sans-serif;
+        font-size: 10pt;
+
+        height: auto;
+        width: 100%;
+        margin-bottom: -16px;
+        z-index: 10;
+        top: 0;
+
+        #logo-area{
+            position: relative;
+            padding: 40px;
+        }
+
+        #logo{
+            width: 150px;
+            height: 150px;
+            justify-self: center;
+            align-self: center;   
+            transition: .1s ease-in-out;
+        }
+
+        #logo:hover{
+            transform: scale(1.1);
+        }
+
+        #links{
+            position: relative;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: left;
+            align-items: center;
+            bottom: 30px;
+            gap: 10px;
+
+            height: 90px;
+            padding: 40px;
+        }
+
+        #link{
+            color: white;
+            background-color: #693F0F;
+            height: 20px;
+            padding: 25px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        #link-active, #link:hover{
+            color: white;
+            background-color: #8C5314;
+            height: 20px;
+            padding: 25px;
+            border-radius: 10px;
+            transition: .1s ease-in-out;
+            text-decoration: none;
+        }
+
+        #link-active:hover, #link:hover{
+            transform: scale(1.1);
+        }
+    }
+
+/* Container */
+    .container{
+        width: 100%;
+        min-height: 550px;
+        height: auto;
+    }
+
+/* Rodapé */
+    footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: flex-start;
+
+        font-family: "Lexend Giga", sans-serif;
+
+        width: 100%;
+        height: auto;
+        padding: 25px;
+        background-color: #E38820;
+
+        #low-nav{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-self: center;
+            gap: 15px;
+
+            bottom: 10px;
+            right: 25px;
+            padding: 25px;
+        }
+
+        #icon{
+            position: relative;
+            background-color: #FAF9F6;
+            border-radius: 25px;
+            padding: 10px;
+            margin-bottom: -10px;
+            width: 50px;
+            height: 50px;
+
+            transition: .2s ease-in-out;
+        }
+        #icon:hover{
+            transform: scale(1.1);
+        }
+    }
+
+/* Top page */
+    .top-page{
+        position: relative;
+        background-color: #693F0F;
+        color: white;
+        overflow: hidden;
+        height: 750px;
+        
+
+        .welcome{
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.37);
+        justify-self: center;
+        text-align: center;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 20px;
+        width: 100%;
+
+        top: 25%;
+        }
+
+        #tp-hr{
+            width: 25%;
+            height: 2px;
+            border: none;
+            background-color: #fff
+        }
+    }
+
+    .top-page video{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: .4;
+        transform: translate(-50%, -50%);
+        min-width: 10%;
+        min-height: 10%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        object-fit: cover;
+    }
+
+/* Nossos clientes adoram;
+   Produtos;
+*/
+    .most-buyed{
+        background-color: #FAF9F6;
+        
+        padding: 15px;
+        text-align: center;
+        z-index: 5;
+    }
+
+    .products{
+        width: 80%;
+        height: auto;
+        min-height: 500px;
+        margin-top: 15px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-self: center;
+        justify-content: center;
+        align-items: center;
+
+        #p-card{
+            padding: 25px;
+            width: 200px;
+            height: auto;
+            text-align: left;
+            min-height: 350px;
+
+            background-color: #eaeaea;
+            border: solid 3px #aeaeae;
+            border-radius: 10px;
+
+            transition: .2s ease-in-out;
+        }
+        #p-card:hover{
+            transform: scale(1.1);
+        }
+
+        #p-title{
+            font-family: "Sour Gummy", sans-serif;
+            font-size: 15pt;
+            margin-bottom: -15px;
+        }
+
+        #view-product{
+            width: 100%;
+            height: 30px;
+            font-family: "Lexend Giga", sans-serif;
+
+            color: white;
+            border-radius: 15px;
+            background-color: #E38820;
+            border: 3px solid #BA6F1A;
+
+            transition: .2s ease-in-out;
+        }
+
+        #view-product:hover{
+            transform: scale(1.1);
+        }
+
+        #price{
+            font-family: "Sour Gummy", sans-serif;
+            font-size: 20pt;
+            
+            color: green;
+        }
+
+        #product-img{
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            transition: .2s ease-in-out
+        }
+    }
+
+    .chocolates{
+        background-color: #FAF9F6;
+        padding: 15px;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+/* Produtos (página) */
+    .whole-product{
+        position: relative;
+        padding-top: 50px;
+        overflow: hidden;
+        height: auto;
+        min-height: 550px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 15px;
+
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    .img-section{
+        width: 450px;
+        height: 550px;
+
+        background-color: #FAF9F6;
+        border: 3px solid #aeaeae;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .info-sect{
+        width: 450px;
+        min-width: 150px;
+        max-width: 450px;
+        height: 550px;
+        background-color: #FAF9F6;
+        border: 3px solid #aeaeae;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+
+        padding-left: 35px;
+        padding-right: 25px;
+    }
+
+    #product-img{
+        width: 370px;
+        height: 370px;
+        background-color: white;
+
+        border: 3px solid #aeaeae;
+        border-radius: 15px;
+        margin-top: 35px;
+    }
+    
+    #productName {
+        font-family: "Sour Gummy", sans-serif;
+        margin-bottom: -35px;
+        font-size: 35pt;
+    }
+
+    #productPrice{
+        font-family: "Sour Gummy", sans-serif;
+        font-size: 35pt;
+        
+        color: green;
+    }
+
+    #productDesc {
+        font-family: "Lexend Giga", sans-serif;
+        font-size: 10pt;
+        margin-top: -25px;
+        font-style: italic;
+    }
+
+    #buy-btn{
+        width: 100%;
+        height: 50px;
+
+        font-family: "Lexend Giga", sans-serif;
+
+        color: white;
+        background-color: #E38820;
+        margin-top: 25px;
+        margin-bottom: 15px;
+
+        border-radius: 15px;
+        border: 3px solid #BA6F1A;
+        transition: .2s ease-in-out;
+    }
+
+    #cart-btn{
+        width: 100%;
+        height: 50px;
+
+        font-family: "Lexend Giga", sans-serif;
+        font-weight: 700;
+        color: #8f8f8f;
+        background-color: #FAF9F6;
+        margin-bottom: 15px;
+
+        border-radius: 15px;
+        border: 3px solid #8f8f8f;
+        transition: .2s ease-in-out;
+    }
+
+    #btn-icon{
+        position: relative;
+        margin-bottom:  -20px;
+        bottom: 10px;
+        width: 35px;
+    }
+
+    #back-link{
+        width: 980px;
+        justify-self: center;
+    }
+
+    #back{
+        position: relative;
+        font-family: "Lexend Giga", sans-serif;
+        font-weight: 700;
+        margin-bottom: -50px;
+
+        color: #8f8f8f;
+        background-color: #FAF9F6;
+        text-align: right;
+
+        margin-top: 50px;
+        width: 230px;
+        height: 50px;
+        border-radius: 15px;
+        border: solid 3px #8f8f8f;
+
+        transition: .2s ease-in-out;
+    }
+
+    #back:hover{
+        transform: scale(1.05);
+    }
+
+    .comments{
+        justify-self: center;
+        justify-content: center;
+        gap: 25px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 55%;
+        height: auto;
+
+    }
+
+    #comment-form{
+        align-self: center;
+        width: 50%;
+        height: auto;
+        padding: 25px;
+        margin-top: 25px;
+
+        border-radius: 25px;
+        border: 3px #aeaeae solid;
+        background-color: #FAF9F6;
+    }
+
+    input#comment-poster{
+        width: 500px;
+        height: 25px;
+
+        margin-bottom: 15px;
+        border-radius: 10px;
+        border: 3px #aeaeae solid;
+
+        font-family: "Lexend Giga", sans-serif;
+        font-style: italic;
+    }
+
+    label{
+        position: relative;
+        font-family: "Lexend Giga", sans-serif;
+        font-size: 13pt;
+    }
+
+    textarea{
+        width: 500px;
+        height: 200px;
+
+        border-radius: 10px;
+        border: 3px #aeaeae solid;
+
+        font-family: "Lexend Giga", sans-serif;
+        font-style: italic;
+
+        min-width: 500px;
+        min-height: 200px;
+        max-width: 500px;
+        max-height: 200px;
+    }
+
+    #post-btn{
+        width: 510px;
+        height: 50px;
+
+        font-family: "Lexend Giga", sans-serif;
+
+        color: white;
+        background-color: #E38820;
+        margin-top: 25px;
+        margin-bottom: 15px;
+
+        border-radius: 15px;
+        border: 3px solid #BA6F1A;
+    }
+
+    table{
+        align-self: center;
+        width: 55%;
+        height: auto;
+        padding: 25px;
+        margin-top: 5px;
+        margin-bottom: 35px;
+
+        border-radius: 25px;
+        border: 3px #aeaeae solid;
+        background-color: #FAF9F6;
+    }
+    
+    th{
+        border-radius: 5px;
+        font-family: "Lexend Giga", sans-serif;
+        border: 1px solid #000;
+    }
+
+    td{
+        font-family: "Lexend Giga", sans-serif;
+        color: #8f8f8f;
+        border: 1px solid #8f8f8f;
+        
+    }
+
+/* Sobre */
+    .story{
+        background-color: #FAF9F6;
+        border: 3px solid #aeaeae;
+
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        gap: 15px;
+
+        width: 50%;
+        height: auto;
+        padding: 25px;
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+
+    .story-header{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .story-sect{
+        font-family: "Lexend Giga", sans-serif;
+        background-color: #eaeaea;
+        border-radius: 15px;
+        padding: 15px;
+    }
+
+    .cute-phrase{
+        justify-self: center;
+        align-items: center;
+        text-align: center;
+        width: 65%;
+    }
+
+    #left{
+        text-align: left;
+    }
+
+    #right{
+        text-align: right;
+    }
+
+/* Pages (Outras páginas) */
+    .pages{
+        background-color: #eaeaea;
+        width: 100%;
+        height: auto;
+        min-height: 500px;
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        justify-items: center;
+        text-align: center;
+    }
+
+    .cards{
+        padding: 20px;
+        width: 60%;
+        height: auto;
+
+        color:white;
+        border-radius: 30px;
+
+        text-align: left;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+
+        /* Cards (individuais) */
+        #card{
+            color: #000;
+            padding: 20px;
+            width: 250px;
+            height: 300px;
+
+            font-family: "Lexend Giga", sans-serif;
+            font-size: 10pt;
+
+            background-color: #FAF9F6;
+            border: solid 3px #aeaeae;
+            border-radius: 10px;
+
+            transition: .2s ease-in-out;
+        }
+
+        #card:hover{
+            transform: scale(1.04);
+        }
+
+        #card-btn{
+            width: 100%;
+            height: 30px;
+            font-family: "Lexend Giga", sans-serif;
+
+            color: white;
+            background-color: #E38820;
+
+            border-radius: 15px;
+            border: 3px solid #BA6F1A;
+            transition: .2s ease-in-out;
+        }
+
+        #card-btn:hover{
+            transform: scale(1.05);
+        }
+
+        #icon{
+            position: relative;
+            width: 50px;
+            height: 50px;
+            left: 100px;
+        }
+    }
+
+/* Contato */
+    .contact-card{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        justify-content: center;
+        justify-self: center;
+        gap: 25px;
+    }
+
+    #contact-txt{
+        width: 50%;
+
+        margin-top: 55px;
+        justify-content: center;
+        justify-self: center;
+        text-align: center;
+    }
+
+    #contact-card{
+        
+        align-items: center;
+        text-align: center;
+
+        border: 3px #aeaeae solid;
+        background-color: #f9faf0;
+        border-radius: 15px;
+        padding: 25px;
+        width: 200px;
+        height: 250px;
+    }
+
+    #icon{
+        width: 75px;
+    }
+
+/* Geral */
+    #main-title{
+        font-family: "Sour Gummy", sans-serif;
+        font-size: 40pt;
+    }
+
+    #fancy-title{
+        font-family: "Dynalight", cursive;
+        font-weight: 400;
+        font-size: 45pt;
+    }
+
+    #title{
+        font-family: "Sour Gummy", sans-serif;
+        margin-bottom: -10px;
+        font-size: 25pt;
+    }
+
+    #s-title{
+        font-family: "Lexend Giga", sans-serif;
+        color: #8f8f8f;
+        font-style: italic;
+    }
+
+    #low-title{
+        font-family: "Lexend Giga", sans-serif;
+        font-size: 11pt;
+    }
+
+
+/* Cores */
+    .color1{
+        color: #E38820;
+    }
+
+    .color2{
+        color: #BA6F1A;
+    }
+
+    .color3{
+        color: #8C5314;
+    }
+
+    .color4{
+        color: #693F0F;
+    }
+
+    .color5{
+        color: #402609;
+    }

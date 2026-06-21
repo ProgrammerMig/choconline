@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/ChocOnline-notxt.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>ChocOnline - Home</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <div id="logo-area">
+            <a href="index.html">
+                <img src="assets/ChocOnline.png" id="logo">
+            </a>
+        </div>
+        <nav id="links">
+            <a href="index.html" id="link-active">Home</a>
+            <a href="about.html" id="link">Sobre</a>
+            <a href="store.html" id="link">Produtos</a>
+            <a href="contact.html" id="link">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo do site -->
+    <div class="container">
+        <!-- Banner + mensagem de bem-vindo -->
+        <div class="top-page">
+            <video src="assets/banner.mp4" control="hidden" autoplay loop muted></video>
+
+            <!-- Mensagem de bem vindo (inteira) -->
+            <div class="welcome">
+                <hr id="tp-hr">
+                <div>
+                    <p id="low-title" >Olá, seja bem vindo ao</p>
+                    <h1 id="main-title" class="color4">ChocOnline!</h1>
+                    <p id="low-title">Chocolates gostosos, da internet, direto pra sua casa!</p>
+                </div>
+                <hr id="tp-hr">
+            </div>
+        </div>
+
+        <!-- Produtos com mais "vendas" -->
+        <div class="most-buyed">
+            <img src="assets/icons/cocoa.png" style="width: 50px; margin-top: 15px;">
+            <h1 id="title">Nossos clientes <i>adoram</i>!</h1>
+            <p id="s-title">Os chocolates mais vendidos:</p>
+            <!-- Todos os cards de produtos -->
+            <div class="products">
+                <div id="p-card">
+                    <img id="product-img" src="assets/chocolate-imgs/0.png">
+                    <h1 id="p-title">Barra de chocolate (tradicional, 100g)</h1>
+                    <p id="price">R$15,99<span id="s-title" style="font-size: 9pt;">p/und</span></p>
+                    <button id="view-product" onclick="getId(0)">Visualizar produto</button>
+                </div>
+                <div id="p-card">
+                    <img id="product-img" src="assets/chocolate-imgs/2.png">
+                    <h1 id="p-title">Barra de chocolate (amargo, 100g)</h1>
+                    <p id="price">R$15,99<span id="s-title" style="font-size: 9pt;">p/und</span></p>
+                    <button id="view-product" onclick="getId(2)">Visualizar produto</button>
+                </div>
+                <div id="p-card">
+                    <img id="product-img" src="assets/chocolate-imgs/3.png">
+                    <h1 id="p-title">Barra de chocolate (trufada, 100g)</h1>
+                    <p id="price">R$18,99<span id="s-title" style="font-size: 9pt;">p/und</span></p>
+                    <button id="view-product" onclick="getId(3)">Visualizar produto</button>
+                </div>
+                <div id="p-card">
+                    <img id="product-img" src="assets/chocolate-imgs/8.png">
+                    <h1 id="p-title">Trufa de chocolate (personalizada, 30g)</h1>
+                    <p id="price">R$8,00<span id="s-title" style="font-size: 9pt;">p/und</span></p>
+                    <button id="view-product" onclick="getId(8)">Visualizar produto</button>
+                </div>
+                <div id="p-card">
+                    <img id="product-img" src="assets/chocolate-imgs/1.png">
+                    <h1 id="p-title">Barra de chocolate (branco, 100g)</h1>
+                    <p id="price">R$15,99<span id="s-title" style="font-size: 9pt;">p/und</span></p>
+                    <button id="view-product" onclick="getId(1)">Visualizar produto</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards de navegação/informação -->
+        <div class="pages">
+            <h1 id="title">Navegue pelo nosso site utilizando os cards abaixo.</h1>
+            <p id="s-title">(Ou use os botões no lado direito do cabeçalho)</p>
+            <!-- Todos os cards de navegação -->
+            <div class="cards">
+                <div id="card" class="">
+                    <img src="assets/icons/info.png" alt="" id="icon">
+                    <h2 id="title">Sobre</h2>
+                    <p id="s-title">Um pouco sobre nós!</p>
+                    <p>Na página Sobre, contamos um pouco de nossa história, desde nossos planejamentos, nossas falhas, e enfim o nosso projeto atual, o ChocOnline. </p>
+                    <a href="about.html"><button id="card-btn">Acesse essa página</button></a>
+                </div>
+                <div id="card" class="">
+                    <img src="assets/icons/cocoa.png" alt="" id="icon">
+                    <h2 id="title">Produtos</h2>
+                    <p id="s-title">A parte interessante!</p>
+                    <p>Na página Produtos, é exibido o nosso catálogo de chocolates (tradicional, branco, amargo, trufas, etc) disponíveis para compra</p>
+                    <a href="store.html"><button id="card-btn">Acesse essa página</button></a>
+                </div>
+                <div id="card" class="">
+                    <img src="assets/icons/help.png" alt="" id="icon">
+                    <h2 id="title">Contato</h2>
+                    <p id="s-title">Suporte e comercial.</p>
+                    <p>Nossas opções de contato, para fins de suporte, ou para fins comerciais. Por gentileza: utilizar cada um conforme o necessário.</p>
+                    <a href="contact.html"><button id="card-btn">Acesse essa página</button></a>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <!-- Rodapé padrão dos meus PFB. -->
+    <footer>
+        <div id="footer-txt">
+            <p>Miguel Thomas; 2° Info; 2026© <br>
+                Feito para fins didádicos como projeto final bimestral.<br>
+                Professora Débora Paulo; ETEC Antônio Furlan - Barueri/SP</p>
+        </div>
+        <nav id="low-nav">
+            <a href="https://www.youtube.com/@migmated" id="l-link"><img src="assets/icons/github-icon.png" id="icon"></a>
+            <a href="https://www.youtube.com/@migmated" id="l-link"><img src="assets/icons/youtube-icon.png" id="icon"></a>
+            <a href="" id="l-link"><img src="assets/icons/x-icon.webp" id="icon" onclick="alert('Não uso X')"></a>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
